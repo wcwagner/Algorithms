@@ -19,9 +19,13 @@ class Queue():
         return self.list[-1]
 
     def enqueue(self, item):
-        self.list.insert(0, item)
+        self.list.append(item)
         self.size += 1
 
     def dequeue(self):
         self.size -= 1
         return self.list.pop(0)
+
+    def print_(self):
+        for d in self.list:
+            print d.data,
