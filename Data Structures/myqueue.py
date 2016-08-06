@@ -28,4 +28,4 @@ class MyQueue():
 
     def print_(self):
         for d in self.list:
-            print d.data,
+            print(d.data, sep=',')
