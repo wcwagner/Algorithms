@@ -1,7 +1,7 @@
 """List based heap implementation, heap with minimum value at root"""
 
 
-class BinHeap():
+class MinHeap():
 
     def __init__(self):
         self.heap_list = [0]
@@ -54,11 +54,6 @@ class BinHeap():
         while(ix > 0):
             self.perc_down(ix)
             ix -= 1
-
-bh = BinHeap()
-bh.build_heap([6,5,9,2,4,1])
-print(bh.del_min())
-print(bh.del_min())
-print(bh.del_min())
-print(bh.del_min())
-print(bh.del_min())
+	
+    def empty(self):
+        return self.curr_size == 0
