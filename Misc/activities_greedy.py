@@ -6,13 +6,13 @@ def activity_selection(S, F):
     most_recent_end_time = -float("inf")
 
     for i in range(len(S)):
-        if s[i] < most_recent_end_time:
+        if S[i] < most_recent_end_time:
             continue
         else:
             activities.append(i)
-            most_recent_end_time = f[i]
+            most_recent_end_time = F[i]
 
-        return activities
+    return activities
 
 
 if __name__ == "__main__":
